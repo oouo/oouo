@@ -34,23 +34,23 @@ func GetBio() Bio {
 
 <p align="center">
   <a href="https://dev.to/oouo">
-    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Angel Santiago Jaime Zavala's DEV Profile" height="30" width="30">
+    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="oouo's DEV Profile" height="30" width="30">
   </a>
 
   <a href="https://stackoverflow.com/users/16484481/oouo?tab=profile">
-    <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="Angel Santiago Jaime Zavala's Stack Overflow Profile" height="30" width="30">
+    <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="oouo's Stack Overflow Profile" height="30" width="30">
   </a>
 
   <a href="https://meta.stackexchange.com/users/1152910/oouo">
-    <img src="https://www.vectorlogo.zone/logos/stackexchange/stackexchange-icon.svg" alt="Angel Santiago Jaime Zavala's Stack Exchange Profile" height="30" width="30">
+    <img src="https://www.vectorlogo.zone/logos/stackexchange/stackexchange-icon.svg" alt="oouo's Stack Exchange Profile" height="30" width="30">
   </a>
 
   <a href="https://stackshare.io/oouo">
-    <img src="https://cdn.worldvectorlogo.com/logos/stackshare.svg" alt="Angel Santiago Jaime Zavala's StackShare Profile" height="30" width="30">
+    <img src="https://cdn.worldvectorlogo.com/logos/stackshare.svg" alt="oouo's StackShare Profile" height="30" width="30">
   </a>
   
   <a href="https://gitlab.com/oouo">
-    <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" alt="Angel Santiago Jaime Zavala's GitLab Profile" height="30" width="30">
+    <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" alt="oouo's GitLab Profile" height="30" width="30">
   </a>
 </p>
 
@@ -58,7 +58,7 @@ func GetBio() Bio {
 
 <p align="center">Tools that I use on a daily basis, or that I've used or worked (either much or a bit) with on the past</p>
 <p align="center">
-  <a href="https://stackshare.io/oouo/my-personal-stack">
+  <a href="https://stackshare.io/oouo/my-stack">
     <img src="http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" alt="oouo :: StackShare" />
   </a>
 </p>
