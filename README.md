@@ -24,7 +24,7 @@ func GetBio() Bio {
 		"- 🌱 I’m currently learning":        "Golang, MongoDB, RabbitMQ, K8s, GCP (Tech stack from my company) --- Sharpening my Front End Skills for the MERN stack (Personal goal)",
 		"- 👯 I’m looking to collaborate on": "Python, Golang and Docker related projects",
 		"- 🤔 I’m looking for help with":     "Anything related to what I am currently learning 😅",
-		"- 💬 Ask me about":                  "Java, Python, PHP, SQL, Software Design & Architecture, Web-Dev and SEO",
+		"- 💬 Ask me about":                  "Java, Python, PHP, SQL, Software Design & Architecture, Web-Dev",
 		"- 📫 How to reach me:":              "https://github.com/oouo#you-can-reach-me-at-alien",
 	}
 }
