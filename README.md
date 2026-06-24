@@ -67,12 +67,7 @@ currently:
 ## `> stats`
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg#gh-dark-mode-only" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg#gh-light-mode-only" />
-    <img height="180" src="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg" alt="GitHub Overview" />
-  </picture>
-  <img height="180" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&theme=ambient_gradient&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
+  <img width="467" height="195" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&theme=ambient_gradient&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
 </p>
 
 ---
