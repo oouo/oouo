@@ -68,27 +68,15 @@ currently:
 ## `> stats`
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=oouo&theme=material-palenight&hide_border=true&border_radius=8" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=oouo&theme=default&hide_border=true&border_radius=8" />
-    <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=oouo&theme=material-palenight&hide_border=true&border_radius=8" />
-  </picture>
+  <img width="495" src="https://streak-stats.demolab.com?user=oouo&hide_border=true&border_radius=8&background=45%2C667eea%2C764ba2&ring=fff&fire=fff&currStreakLabel=fff&sideLabels=fff&currStreakNum=fff&sideNums=fff&dates=ddd" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=material-palenight&hide_border=true&border_radius=8&include_all_commits=true&rank_icon=github" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=default&hide_border=true&border_radius=8&include_all_commits=true&rank_icon=github" />
-    <img alt="GitHub Stats" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=material-palenight&hide_border=true&border_radius=8&include_all_commits=true&rank_icon=github" />
-  </picture>
+  <img width="495" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&bg_color=45,667eea,764ba2&title_color=fff&text_color=fff&icon_color=fff&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&theme=material-palenight&hide_border=true&border_radius=8&layout=compact&langs_count=8" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&theme=default&hide_border=true&border_radius=8&layout=compact&langs_count=8" />
-    <img alt="Top Languages" src="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&theme=material-palenight&hide_border=true&border_radius=8&layout=compact&langs_count=8" />
-  </picture>
+  <img width="495" src="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&hide_border=true&border_radius=8&bg_color=45,667eea,764ba2&title_color=fff&text_color=fff&layout=compact&langs_count=8" alt="Top Languages" />
 </p>
 
 ---
