@@ -68,15 +68,7 @@ currently:
 ## `> stats`
 
 <p align="center">
-  <img width="495" src="https://streak-stats.demolab.com?user=oouo&hide_border=true&border_radius=8&background=45%2C667eea%2C764ba2&ring=fff&fire=fff&currStreakLabel=fff&sideLabels=fff&currStreakNum=fff&sideNums=fff&dates=ddd" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img width="495" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&bg_color=45,667eea,764ba2&title_color=fff&text_color=fff&icon_color=fff&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img width="495" src="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&hide_border=true&border_radius=8&bg_color=45,667eea,764ba2&title_color=fff&text_color=fff&layout=compact&langs_count=8" alt="Top Languages" />
+  <img width="495" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&theme=ambient_gradient&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
 </p>
 
 ---
