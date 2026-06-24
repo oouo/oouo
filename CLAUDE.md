@@ -9,31 +9,36 @@ This is Richard's GitHub profile repository (`oouo/oouo`). The `README.md` is re
 ### Design Principles (2025/2026 Best Practices)
 
 - **Minimal and scannable** — visitors spend 3-5 seconds on a profile; every element must earn its space
+- **Terminal aesthetic** — section headers use `> cat file.md` / `> ls dir/` style, reinforcing engineer identity
 - **Visual-first** — icons (skillicons.dev) over text lists, animations (typing-svg, capsule-render) over static headers
-- **Single-column flow** — no side-by-side layouts that break on mobile
+- **Progressive disclosure** — `<details>` tags hide stats by default; interested visitors expand, others aren't overwhelmed
 - **Dark/Light mode** — use `<picture>` + `<source media="(prefers-color-scheme: ...)">` for theme adaptation
 - **Self-hosted stats** — avoid public instance rate limits
+- **Responsive layout** — Streak (53%) + Stats (45%) side-by-side on desktop, stacked on mobile
 
 ### Component Stack
 
 | Component | Service | Purpose |
 |-----------|---------|---------|
 | Header/Footer | `capsule-render.vercel.app` | Gradient wave animation |
-| Typing Animation | `readme-typing-svg.demolab.com` | Animated tagline loop |
+| Typing Animation | `readme-typing-svg.demolab.com` | Animated name + role |
 | Profile Views | `komarev.com/ghpvc` | Visitor counter badge |
-| Tech Icons | `skillicons.dev` | Language & tool icons |
+| Tech Icons | `skillicons.dev` | Language & tool icons (2 rows, 6 per line) |
 | Streak Stats | `streak-stats.demolab.com` | Contribution streak |
 | GitHub Stats | `github-readme-stats.uuuuo.com` | Self-deployed stats card |
+| GitHub Trophy | `github-profile-trophy.vercel.app` | Achievement badges (6 columns) |
 
 ### Content Structure
 
-1. **Capsule header** — name + role with wave animation
-2. **Typing SVG** — rotating tagline: "Prompt → Context → Harness → Loop" / "Building Intelligent Systems with Code"
-3. **About** — 2-line positioning statement
-4. **Engineering Layers** — Prompt → Context → Harness → Loop in vertical flow
-5. **Tech icons** — Two rows via skillicons.dev (languages / tools)
-6. **Stats** — Streak + GitHub Stats with dark/light mode support
-7. **Capsule footer** — wave closure
+1. **Capsule header** — minimal wave, no text (text moved to typing SVG)
+2. **Typing SVG** — rotating: "Hey, I'm Richard" / "AI / ML Engineer"
+3. **Tagline** — 2-line positioning + methodology statement
+4. **Social proof** — followers badge + profile views (top area)
+5. **`> cat about.md`** — YAML code block with structured bio
+6. **`> cat engineering_layers.md`** — numbered table (01-04) with key concepts
+7. **`> ls tech/`** — skillicons.dev in 2 rows (languages+ML / infrastructure)
+8. **`<details>` Stats** — collapsible: Streak + Stats side-by-side, Top Languages, Trophy wall
+9. **Capsule footer** — wave closure + philosophy tagline
 
 ### The Engineering Philosophy
 

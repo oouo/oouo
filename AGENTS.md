@@ -12,12 +12,14 @@ This repository (`oouo/oouo`) serves as Richard's GitHub profile page. The `READ
 
 ## Design Rules
 
-1. **Keep it minimal** — every section must justify its vertical space in a 3-5 second scan
-2. **No code blocks for bio** — plain text is faster to parse than syntax-highlighted struct definitions
-3. **Dark/Light mode** — always use `<picture>` with `<source media="(prefers-color-scheme: ...)">` for images that have theme variants
-4. **Single-column layout** — no side-by-side cards; they break on mobile
-5. **No emoji in headings** — keep it professional
-6. **Self-hosted over public** — prefer `github-readme-stats.uuuuo.com` over any shared public instance
+1. **Terminal aesthetic** — section headers use backtick-wrapped `> command` style (e.g., `` ## `> cat about.md` ``)
+2. **YAML for bio** — structured self-intro in YAML code block, not Go/Python/plain text
+3. **Progressive disclosure** — stats and secondary content inside `<details>` tags; only core identity visible by default
+4. **Dark/Light mode** — always use `<picture>` with `<source media="(prefers-color-scheme: ...)">` for themed images
+5. **Responsive side-by-side** — Streak (53% width) + Stats (45% width) auto-stack on mobile
+6. **No emoji in headings** — keep it professional; terminal style replaces emoji flair
+7. **Self-hosted over public** — prefer `github-readme-stats.uuuuo.com` over any shared public instance
+8. **skillicons.dev** — use `perline=6` and `theme=dark`; split into logical groups (languages vs infra)
 
 ## Content Guidelines
 
@@ -45,6 +47,7 @@ This repository (`oouo/oouo`) serves as Richard's GitHub profile page. The `READ
 | skillicons | `skillicons.dev` | GET returns SVG |
 | streak-stats | `streak-stats.demolab.com` | GET with `?user=oouo` returns SVG |
 | github-readme-stats | `github-readme-stats.uuuuo.com` | GET `/api?username=oouo` returns SVG |
+| github-profile-trophy | `github-profile-trophy.vercel.app` | GET `/?username=oouo` returns SVG |
 | profile views | `komarev.com/ghpvc` | GET with `?username=oouo` returns SVG |
 
 ## Editing Workflow
