@@ -2,13 +2,12 @@
 
 <p align="center">
   <a href="https://github.com/oouo">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&repeat=true&width=500&height=60&lines=Hey+%F0%9F%91%8B+I'm+Richard;AI+%2F+ML+Engineer" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&repeat=true&width=600&height=60&lines=Hey+%F0%9F%91%8B+I'm+Richard;AI+%2F+ML+Engineer;Prompt+%E2%86%92+Context+%E2%86%92+Harness+%E2%86%92+Loop" />
   </a>
 </p>
 
 <p align="center">
-  <em>Building production-grade intelligent systems.</em><br/>
-  <em>I think in layers: <strong>Prompt → Context → Harness → Loop</strong></em>
+  <em>Building production-grade intelligent systems.</em>
 </p>
 
 <p align="center">
