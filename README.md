@@ -67,8 +67,16 @@ currently:
 ## `> stats`
 
 <p align="center">
-  <img height="195" src="https://github-readme-stats.uuuuo.com/api/top-langs/?username=oouo&theme=ambient_gradient&hide_border=true&border_radius=8&layout=compact&langs_count=8" alt="Top Languages" />
-  <img height="195" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&theme=ambient_gradient&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg#gh-dark-mode-only" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg#gh-light-mode-only" />
+    <img height="180" width="400" src="https://raw.githubusercontent.com/oouo/github-stats/generated/overview.svg" alt="GitHub Overview" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/languages.svg#gh-dark-mode-only" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/oouo/github-stats/generated/languages.svg#gh-light-mode-only" />
+    <img height="180" width="400" src="https://raw.githubusercontent.com/oouo/github-stats/generated/languages.svg" alt="Languages" />
+  </picture>
 </p>
 
 ---
