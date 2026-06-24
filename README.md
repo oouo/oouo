@@ -1,84 +1,62 @@
-# Richard
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=180&section=header&text=Richard&fontSize=42&fontColor=58a6ff&fontAlignY=35&desc=AI/ML%20Engineer&descSize=18&descColor=8b949e&descAlignY=55&animation=fadeIn" />
 
-<h2 align="center">About me</h2>
+<p align="center">
+  <a href="https://github.com/oouo">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Prompt+%E2%86%92+Context+%E2%86%92+Harness+%E2%86%92+Loop;Building+Intelligent+Systems+with+Code" />
+  </a>
+</p>
 
-```golang
-package main
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=oouo&label=visitors&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
 
-import (
-	"fmt"
-)
+## About
 
-type Bio map[string]string
+AI/ML Engineer focused on building production-grade intelligent systems.  
+I think in layers: **Prompt → Context → Harness → Loop** — from crafting a single instruction to orchestrating autonomous agents.
 
-func main() {
-	for k, v := range GetBio() {
-		fmt.Printf("%+v: %+v\n", k, v)
-	}
-}
+## The Engineering Layers
 
-func GetBio() Bio {
-	return Bio{
-		"- ⚡ Quick bio:":                    "A kind of metalHead-melomaniac-gearAddict-amateurMusician-traveler-foodLover-gamer-coder-programmer-catLover-sportsAficionado hybrid",
-		"- 🔭 I’m currently working on":      "Tredicom as a Senior Software Developer --- UAdeC as a Part Time Teacher",
-		"- 🌱 I’m currently learning":        "Golang, MongoDB, RabbitMQ, K8s, GCP (Tech stack from my company) --- Sharpening my Front End Skills for the MERN stack (Personal goal)",
-		"- 👯 I’m looking to collaborate on": "Python, Golang and Docker related projects",
-		"- 🤔 I’m looking for help with":     "Anything related to what I am currently learning 😅",
-		"- 💬 Ask me about":                  "Java, Python, PHP, SQL, Software Design & Architecture, Web-Dev",
-		"- 📫 How to reach me:":              "https://github.com/oouo#you-can-reach-me-at-alien",
-	}
-}
+```
+Prompt Engineering      Instruction design · Few-shot · CoT · Structured output
+        ↓
+Context Engineering     RAG · Vector search · Memory · Knowledge management
+        ↓
+Harness Engineering     Agents · Tool Use · MCP · Multi-agent orchestration
+        ↓
+Loop Engineering        Autonomous pipelines · Feedback loops · Self-healing systems
 ```
 
-<h2 align="center">You can reach me at :alien:</h2>
+## Tech
 
 <p align="center">
-  <a href="https://dev.to/oouo">
-    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="oouo's DEV Profile" height="30" width="30">
-  </a>
-
-  <a href="https://stackoverflow.com/users/16484481/oouo?tab=profile">
-    <img src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" alt="oouo's Stack Overflow Profile" height="30" width="30">
-  </a>
-
-  <a href="https://meta.stackexchange.com/users/1152910/oouo">
-    <img src="https://www.vectorlogo.zone/logos/stackexchange/stackexchange-icon.svg" alt="oouo's Stack Exchange Profile" height="30" width="30">
-  </a>
-
-  <a href="https://stackshare.io/oouo">
-    <img src="https://cdn.worldvectorlogo.com/logos/stackshare.svg" alt="oouo's StackShare Profile" height="30" width="30">
-  </a>
-  
-  <a href="https://gitlab.com/oouo">
-    <img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" alt="oouo's GitLab Profile" height="30" width="30">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,python,go,rust&theme=dark" alt="Languages" />
   </a>
 </p>
 
-<h2 align="center">My stack :man_technologist:</h2>
-
-<p align="center">Tools that I use on a daily basis, or that I've used or worked (either much or a bit) with on the past</p>
 <p align="center">
-  <a href="https://stackshare.io/oouo/my-stack">
-    <img src="http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat" alt="oouo :: StackShare" />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,docker,kubernetes,postgres,redis,linux,git&theme=dark" alt="Tools" />
   </a>
 </p>
 
-<h2 align="center">Github stats :bar_chart:</h2>
+## Stats
 
-<h4 align="center">Visitor's count :eyes:</h4>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=oouo&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=oouo&theme=default&hide_border=true" />
+    <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=oouo&theme=tokyonight&hide_border=true" />
+  </picture>
+</p>
 
-<p align="center"><img src="https://profile-counter.glitch.me/{oouo}/count.svg" alt="oouo :: Visitor's Count" /></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=default&hide_border=true&include_all_commits=true" />
+    <img alt="GitHub Stats" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  </picture>
+</p>
 
-<h4 align="center">Top langs :tongue:</h4>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oouo&langs_count=10&theme=tokyonight&layout=compact" alt="oouo :: Top Langs" /></p>
-
-<h4 align="center">Profile stats :musical_keyboard:</h4>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=oouo&show_icons=true&theme=synthwave" alt="oouo :: Profile Stats" /></p>
-
-<p align="center"><img src="https://thumbs.gfycat.com/GoodnaturedFondGaur-size_restricted.gif" alt="Synthwave" height="300" width="500"></p>
-
----
-
-⭐️ From [@oouo](https://github.com/oouo)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=100&section=footer" />
