@@ -1,80 +1,87 @@
-# CLAUDE.md — GitHub Profile README Project
+# CLAUDE.md — AI Agent Instructions for Profile README
 
-## Project Overview
+## Source of Truth
 
-This is Richard's GitHub profile repository (`oouo/oouo`). The `README.md` is rendered as the public profile page at `github.com/oouo`.
+- This file is the canonical project instruction file.
+- `AGENTS.md` must remain a relative symbolic link to `CLAUDE.md`; never maintain a second copy.
+- Keep this file limited to current constraints and durable decisions. History belongs in Git.
 
-## Architecture & Design Decisions
+## Project Scope
 
-### Design Principles (2025/2026 Best Practices)
+This repository (`oouo/oouo`) is Richard's GitHub profile. `README.md` is the public entry point at `github.com/oouo`; the local SVG files it references are also part of the rendered page.
 
-- **Minimal and scannable** — visitors spend 3-5 seconds on a profile; every element must earn its space
-- **Terminal aesthetic** — section headers use `> cat file.md` / `> ls dir/` style, reinforcing engineer identity
-- **Visual-first** — icons (skillicons.dev) over text lists, animations (typing-svg, capsule-render) over static headers
-- **Progressive disclosure** — `<details>` tags hide stats by default; interested visitors expand, others aren't overwhelmed
-- **Dark/Light mode** — use `<picture>` + `<source media="(prefers-color-scheme: ...)">` for theme adaptation
-- **Self-hosted stats** — avoid public instance rate limits
-- **Responsive layout** — Streak (53%) + Stats (45%) side-by-side on desktop, stacked on mobile
+| Path | Responsibility |
+|------|----------------|
+| `README.md` | Public profile content and layout |
+| `assets/github-stats-dark.svg` | Repository-hosted dark statistics card |
+| `assets/github-stats-light.svg` | Repository-hosted light statistics card |
+| `.github/workflows/update-stats.yml` | Scheduled and manual card refresh |
+| `docs/stats-maintenance.md` | Statistics architecture, validation and operations |
 
-### Component Stack
+## Identity Contract
 
-| Component | Service | Purpose |
-|-----------|---------|---------|
-| Header/Footer | `capsule-render.vercel.app` | Gradient wave animation |
-| Typing Animation | `readme-typing-svg.demolab.com` | Animated name + role |
-| Profile Views | `komarev.com/ghpvc` | Visitor counter badge |
-| Tech Icons | `skillicons.dev` | Language & tool icons (2 rows, 6 per line) |
-| Streak Stats | `streak-stats.demolab.com` | Contribution streak |
-| GitHub Stats | `github-readme-stats.uuuuo.com` | Self-deployed stats card |
-| GitHub Trophy | `github-profile-trophy.vercel.app` | Achievement badges (6 columns) |
+- Name: Richard
+- Role: AI/ML Engineer
+- Core philosophy: **Prompt → Context → Harness → Loop**
+- Languages: Java, Python, Go, Rust
+- Focus: LLM Applications, Multi-Agent Systems, AI Infrastructure
 
-### Content Structure
+The four-layer engineering framework is the profile's core differentiator and must be preserved.
 
-1. **Capsule header** — minimal wave, no text (text moved to typing SVG)
-2. **Typing SVG** — rotating: "Hey, I'm Richard" / "AI / ML Engineer"
-3. **Tagline** — 2-line positioning + methodology statement
-4. **Social proof** — followers badge + profile views (top area)
-5. **`> cat about.md`** — YAML code block with structured bio
-6. **`> cat engineering_layers.md`** — numbered table (01-04) with key concepts
-7. **`> ls tech/`** — skillicons.dev in 2 rows (languages+ML / infrastructure)
-8. **`<details>` Stats** — collapsible: Streak + Stats side-by-side, Top Languages, Trophy wall
-9. **Capsule footer** — wave closure + philosophy tagline
+## README Design Rules
 
-### The Engineering Philosophy
+1. **Minimal and scannable** — keep the core identity visible and secondary content collapsed.
+2. **Terminal aesthetic** — section headings use backtick-wrapped `> command` text, such as ``## `> cat about.md```.
+3. **YAML biography** — keep the structured self-introduction in a YAML code block.
+4. **Progressive disclosure** — statistics stay inside a `<details>` block.
+5. **Dark and light modes** — themed images use `<picture>` with matching `<source media="(prefers-color-scheme: ...)">` elements.
+6. **Professional headings** — do not use emoji in headings.
+7. **Technology icons** — keep logical language/ML and infrastructure groups; use `theme=dark` and `perline=6`.
+8. **Responsive markup** — avoid fixed multi-column assumptions that break when GitHub stacks content on mobile.
 
-Richard's AI engineering methodology expressed as four layers:
+Keep the current content order:
 
-```
-Prompt Engineering      → Instruction design, few-shot, CoT, structured output
-Context Engineering     → RAG, vector search, memory, knowledge management
-Harness Engineering     → Agents, tool use, MCP, multi-agent orchestration
-Loop Engineering        → Autonomous pipelines, feedback loops, self-healing
-```
+1. Capsule header
+2. Typing SVG with name, role and four-layer methodology
+3. One-line positioning statement
+4. Followers and profile views
+5. YAML biography
+6. Four engineering layers
+7. Two technology icon groups
+8. Collapsible local statistics card
+9. Philosophy line and capsule footer
 
-### Tech Stack (Richard's)
+Do not reintroduce Streak, Top Languages or Trophy sections unless the user explicitly asks for them.
 
-- **Languages**: Java, Python, Go, Rust
-- **AI/ML**: LLM, RAG, Agents, MCP, Multi-Modal
-- **Infrastructure**: Kubernetes, Docker, Cloud Native
-- **Data**: PostgreSQL, Redis, Vector DB
+## Statistics Card Contract
 
-## Configuration
+- README must load the two local files in `assets/`; it must not request a live statistics card during page rendering.
+- The only statistics source is the self-hosted `https://github-readme-stats.uuuuo.com/api`. Never switch to the public `github-readme-stats.vercel.app` instance.
+- Themes remain `tokyonight` for dark mode and `default` for light mode, with animations disabled.
+- The workflow runs daily at 08:08 Asia/Shanghai (00:08 UTC) and also supports manual dispatch.
+- Download both cards to a temporary directory, validate both, then install them together. A failed refresh must leave the committed cards untouched.
+- Preserve the response type, minimum size, XML root, expected fields, error-card and unsafe-content checks.
+- Pin third-party GitHub Actions to a full commit SHA.
 
-### Self-deployed github-readme-stats
+The detailed runbook lives only in `docs/stats-maintenance.md`; do not duplicate it here.
 
-- Domain: `github-readme-stats.uuuuo.com`
-- Platform: Vercel (forked from anuraghazra/github-readme-stats)
-- Requires: GitHub PAT configured in Vercel environment variables
+## External Services
 
-### Color Scheme
+The current README uses `capsule-render.vercel.app`, `readme-typing-svg.demolab.com`, `skillicons.dev` and `komarev.com/ghpvc`. They are third-party services and may deprecate; prefer a self-hosted or repository-hosted replacement when practical.
 
-- Primary blue: `58a6ff` (GitHub dark mode link color)
-- Background gradient: `0d1117 → 161b22 → 0d1117` (GitHub dark theme)
-- Stats theme: `tokyonight` (dark) / `default` (light)
+Typing SVG lines are URL-encoded: use `+` for spaces and `%E2%86%92` for `→`.
 
-## Maintenance Notes
+## Editing and Verification
 
-- Only `README.md` is rendered on the profile page; other files don't affect display
-- If stats card fails, check PAT expiry in Vercel dashboard
-- `skillicons.dev` icons update automatically when new tools are added upstream
-- `capsule-render` and `streak-stats` are community-maintained; monitor for deprecation
+1. Preserve unrelated user changes in the working tree.
+2. Preview `README.md` as GitHub-flavored Markdown after layout changes.
+3. When statistics behavior changes, keep README, workflow, assets and `docs/stats-maintenance.md` consistent.
+4. Validate workflow YAML, both SVG files and whitespace before handoff:
+
+   ```bash
+   ruby -ryaml -e 'YAML.load_file(".github/workflows/update-stats.yml")'
+   xmllint --noout assets/github-stats-dark.svg assets/github-stats-light.svg
+   git diff --check
+   ```
+
+5. Do not commit or push unless the user explicitly requests it.
