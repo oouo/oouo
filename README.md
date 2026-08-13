@@ -66,9 +66,20 @@ currently:
 
 ## `> stats`
 
+<details>
+<summary>GitHub activity</summary>
+
+<br />
+
 <p align="center">
-  <img width="467" height="195" src="https://github-readme-stats.uuuuo.com/api?username=oouo&show_icons=true&hide_border=true&border_radius=8&theme=ambient_gradient&include_all_commits=true&rank_icon=github" alt="GitHub Stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg" />
+    <img width="467" height="195" src="./assets/github-stats-light.svg" alt="Richard's GitHub Stats" />
+  </picture>
 </p>
+
+</details>
 
 ---
 
