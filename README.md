@@ -66,7 +66,7 @@ currently:
 
 ## `> stats`
 
-<details>
+<details open>
 <summary>GitHub activity</summary>
 
 <br />
