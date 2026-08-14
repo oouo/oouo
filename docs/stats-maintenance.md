@@ -9,6 +9,8 @@
 
 `.github/workflows/update-stats.yml` 每天拉取一次新卡片，完整校验两张 SVG 后才一起替换并提交。更新失败时，仓库里的上一版有效卡片保持不变，因此主页展示不受统计服务临时故障影响。
 
+统计区保留可折叠结构，但使用 `<details open>` 让卡片在个人页首屏默认可见。
+
 ```text
 定时或手动触发
   → 自托管统计服务
@@ -57,13 +59,14 @@
 
 ```bash
 ruby -ryaml -e 'YAML.load_file(".github/workflows/update-stats.yml")'
-python3 -c 'import xml.etree.ElementTree as ET; [ET.parse(p) for p in ("assets/github-stats-dark.svg", "assets/github-stats-light.svg")]'
+xmllint --noout assets/github-stats-dark.svg assets/github-stats-light.svg
 git diff --check
 ```
 
-同时确认 README 仍然使用 `<picture>` 提供深浅两套资源，并且两张 SVG 总是成对更新。
+同时确认 README 保留 `<details open>`，继续使用 `<picture>` 提供深浅两套资源，并且两张 SVG 总是成对更新。
 
 ## 参考资料
 
 - [GitHub：README 中的相对链接和图片路径](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+- [GitHub：使用默认展开的折叠区块](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections)
 - [github-readme-stats：使用 GitHub Actions 生成静态 SVG](https://github.com/anuraghazra/github-readme-stats)

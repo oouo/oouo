@@ -31,10 +31,10 @@ The four-layer engineering framework is the profile's core differentiator and mu
 
 ## README Design Rules
 
-1. **Minimal and scannable** — keep the core identity visible and secondary content collapsed.
+1. **Minimal and scannable** — keep the core identity visible and secondary content compact.
 2. **Terminal aesthetic** — section headings use backtick-wrapped `> command` text, such as ``## `> cat about.md```.
 3. **YAML biography** — keep the structured self-introduction in a YAML code block.
-4. **Progressive disclosure** — statistics stay inside a `<details>` block.
+4. **Visible but collapsible statistics** — statistics stay inside a `<details open>` block so the card is visible on first render but readers can collapse it.
 5. **Dark and light modes** — themed images use `<picture>` with matching `<source media="(prefers-color-scheme: ...)">` elements.
 6. **Professional headings** — do not use emoji in headings.
 7. **Technology icons** — keep logical language/ML and infrastructure groups; use `theme=dark` and `perline=6`.
@@ -49,7 +49,7 @@ Keep the current content order:
 5. YAML biography
 6. Four engineering layers
 7. Two technology icon groups
-8. Collapsible local statistics card
+8. Default-open, collapsible local statistics card
 9. Philosophy line and capsule footer
 
 Do not reintroduce Streak, Top Languages or Trophy sections unless the user explicitly asks for them.
@@ -68,7 +68,7 @@ The detailed runbook lives only in `docs/stats-maintenance.md`; do not duplicate
 
 ## External Services
 
-The current README uses `capsule-render.vercel.app`, `readme-typing-svg.demolab.com`, `skillicons.dev` and `komarev.com/ghpvc`. They are third-party services and may deprecate; prefer a self-hosted or repository-hosted replacement when practical.
+The current README uses `capsule-render.vercel.app`, `readme-typing-svg.demolab.com`, `img.shields.io`, `skillicons.dev` and `komarev.com/ghpvc`. They are third-party services and may deprecate; prefer a self-hosted or repository-hosted replacement when practical.
 
 Typing SVG lines are URL-encoded: use `+` for spaces and `%E2%86%92` for `→`.
 
