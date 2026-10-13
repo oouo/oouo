@@ -23,6 +23,24 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
+      - name: Keep scheduled workflow active
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Run before fetching cards: service failures must not cause 60 days of inactivity.
+          last_commit_time="$(git log -1 --format=%ct)"
+          current_time="$(date +%s)"
+          if (( current_time - last_commit_time < 30 * 86400 )); then
+            echo "Repository activity is recent; no keepalive commit needed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keep stats workflow active"
+          git push
+
       - name: Download and validate stats cards
         shell: bash
         env:
@@ -59,6 +77,30 @@ jobs:
               return 1
             fi
 
+            # The service returns error SVGs with HTTP 200, often below the size limit.
+            if grep -Eiq 'Something went wrong|Maximum retries exceeded|rate limit|Resource not accessible|Bad credentials' "$card_path"; then
+              python3 - "$card_path" "$theme" <<'PY'
+          import html
+          import os
+          import sys
+          import xml.etree.ElementTree as ET
+
+          root = ET.parse(sys.argv[1]).getroot()
+          message = " ".join(" ".join(node.itertext()) for node in root.iter("{http://www.w3.org/2000/svg}text"))
+          detail = f"Stats service returned an error card for {sys.argv[2]}: {message}"
+          hint = ""
+          if "personal access token" in message.lower() or "bad credentials" in message.lower():
+              hint = "Check the Vercel service PAT_1 permissions and validity; this is separate from the workflow GITHUB_TOKEN."
+          print(detail, file=sys.stderr)
+          if hint:
+              print(hint, file=sys.stderr)
+          if summary := os.environ.get("GITHUB_STEP_SUMMARY"):
+              with open(summary, "a", encoding="utf-8") as output:
+                  output.write(f"### Stats refresh failed\n\n<pre>{html.escape(detail)}</pre>\n\n{hint}\n\nThe existing card pair was preserved.\n")
+          PY
+              return 1
+            fi
+
             if (( $(wc -c < "$card_path") < 1000 )); then
               echo "Stats card for ${theme} is unexpectedly small" >&2
               return 1
@@ -77,11 +119,6 @@ jobs:
                 return 1
               fi
             done
-
-            if grep -Eiq 'Something went wrong|Maximum retries exceeded|rate limit' "$card_path"; then
-              echo "Stats service returned an error card for ${theme}" >&2
-              return 1
-            fi
 
             if grep -Eiq '<script|<foreignObject|([[:space:]]|<)on[a-z]+[[:space:]]*=' "$card_path"; then
               echo "Stats card for ${theme} contains unsafe SVG content" >&2
